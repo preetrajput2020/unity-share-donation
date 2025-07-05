@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Style+Script&display=swap');
+.artistDashboard{
+   width:100vw;
+  
+   
+}
+.inside{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex-direction: column; 
+     gap:7.7vh;
+     background:#fff; 
+}
+.artistNavBar{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:13.0vh;
+    display: flex;
+gap: 29.5vw;
+justify-content: space-between;
+   padding: 30px 30px 30px 30px;
+
+align-items: center;
+  flex-shrink: 0;
+  border-radius: 0px 0px 24px 24px;
+border: 1px solid #C0C0C0;
+background-color:#E8F6D1;
+}
+.artistNavBar>div:nth-child(1){
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+color: var(--web-secondary, #000);
+font-family: 'Style Script', "cursive";
+font-size: 2.54vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 40px */
+}
+.artistNavBar>div:nth-child(1)> span{
+    color: #5A911F;
+font-family: 'Style Script', "cursive";
+font-size:2.54vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+.artistNavBar>div:nth-child(2){
+    color: #000;
+
+font-family: 'Style Script', "cursive";
+font-size: 2.54vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 40px */
+}
+.artistNavBar>div:nth-child(2)> span{
+
+    color:  #5A911F;
+font-family: 'Style Script', "cursive";
+font-size:2.54vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+.artistNavBar>div:nth-child(3){
+    display: flex;
+padding: 12px 20px;
+justify-content: center;
+align-items: center;
+gap: 4px;
+border-radius: 8px;
+background: var(--web-tertiary, #5A911F);
+color: #FFF;
+
+/* web/Para/bold/03 */
+font-family:  "Prompt", sans-serif;
+font-size: 1.11vw;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 16px */
+}
+.artistNavPlaceholder{
+    width:100vw;
+    height:13.0vh;
+  border-radius: 0px 0px 24px 24px;
+
+background: var(--web-2-prim, #000);
+}
+.yourListening{
+    
+    color: #000;
+
+/* web/Heading/bold/03 */
+font-family: "Prompt", sans-serif;
+font-size: 2.22vw;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+}
+.listeningSongs{
+    padding: 35px 35px 35px 35px;
+   
+   
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    justify-content: space-between;
+
+    border-radius: 24px;
+border: 1px solid #C0C0C0;
+background: #fff;
+}
+#listeningSongs{
+    
+   height:51.6vh;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+    justify-content: space-between;
+
+    border-radius: 24px;
+border: 1px solid #C0C0C0;
+background: #d5dacf;
+}
+.listeningSongsDetail{
+    width:100%;
+    height:6vh;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    color: #B0B0B0;
+align-items: center;
+font-family: "Prompt", sans-serif;
+font-size: 1.11vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+}
+.listeningSongsDetail>div:nth-child(1){
+    font-size: 1.2vw;
+}
+.listeningSongsDetail>div:nth-child(2){
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+}
+
+.listeningSongsDetail>div:nth-child(2) img{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 8px;
+
+}
+.listeningSongsDetail>div:nth-child(7){
+    font-size: 1.2vw;
+    display: flex;
+    width: 7vw;
+    height: 4.7vh;
+padding: 12px 32px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+background: #00A64C;
+}
+.listeningSongsDetail>div:nth-child(7):hover{
+    cursor: pointer;
+}
+.listeningSongs hr{
+height:1px;
+color: #3E3E3E;
+background:  #363834;;
+border: #3E3E3E;;
+}
+.upload{
+    height:72.2vh;
+    width:41.6vw;
+    position: fixed;
+    left:29.2vw;
+    right:29.2vw;
+    top:13.9vh ;
+    bottom:13.9vh;
+    display: flex;
+    flex-direction: column;
+    padding: 102px 76px 40px 76px;
+    gap:12.2vh;
+    border-radius: 24px;
+border: 1px solid #C7C7C7;
+background-color: #363834;
+}
+.uploadUpper{
+    width:100%;
+    height:39.5vh;
+    display: flex;
+
+flex-direction: column;
+align-items: center;
+gap:4.8vh;
+}
+.uploadUpper>div:nth-child(1){
+    display: flex;
+    flex-direction:column;
+    gap:16px;
+    justify-content: space-between;
+    align-items: center;
+    color: #9A9A9A;
+
+font-family: "Prompt", sans-serif;
+font-size: 1.6vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+
+}
+.uploadUpper>div:nth-child(1) img{
+    width: 56px;
+    height: 96px;
+}
+.uploadUpper>div:nth-child(2){
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 16px;
+}
+.uploadUpper>div:nth-child(2)>div:nth-child(1){
+    height:6.02vh;
+    width:12vw;
+    display: flex;
+    white-space: nowrap;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+background: var(--web-tertiary, #5A911F);
+color: #FFF;
+
+font-family:  "Prompt", sans-serif;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+.uploadUpper>div:nth-child(2)>div:nth-child(1) input{
+    
+z-index: -2;
+
+}
+input#file-upload-button{
+    display: none;
+}
+.uploadUpper>div:nth-child(2)>div:nth-child(2){
+    color: #9A9A9A;
+
+text-align: center;
+font-family:  "Prompt", sans-serif;
+font-size: 1.11vw;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+}
+.uploadLower{
+    display: flex;
+
+gap: 16px;
+}
+.uploadLower div{
+    width: 6.9vw;
+height: 16px;
+border-radius: 8px;
+background: #BDBDBD;
+
+}
+.uploadLower>div:nth-child(1){
+    background: #96D14A;
+}
+.upload1{
+    height:61.2vh;
+    width:41.6vw;
+    position: fixed;
+    left:29.2vw;
+    right:29.2vw;
+    top:19.4vh ;
+    bottom:19.4vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 70px;
+    gap:8.4vh;
+    text-align: center;
+    border-radius: 24px;
+border: 1px solid #C7C7C7;
+background-color: #363834;
+color: #FFF;
+
+/* web/Heading/bold/04 */
+font-family: "Prompt", sans-serif;
+font-size: 1.64vw;
+font-style: normal;
+font-weight: 700;
+line-height: 100%;
+}
+.upload1>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap:5.7vh;
+    
+}
+.upload1>div:nth-child(2) input{
+    width:100%;
+height: 6.2vh;
+flex-shrink: 0;
+border-radius: 16px;
+border: 1px solid #989898;
+background: none;
+padding-left: 16px;
+
+}
+.upload1>div:nth-child(2) div{
+    width:100%;
+    height:6vh;
+    display: flex;
+/* width: 460px; */
+padding: 12px 40px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+background:  #5A911F;
+color: #FFF;
+
+/* web/Para/reg/02 */
+font-family: "Prompt", sans-serif;
+font-size: 1.4vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+.noListeningSong{
+    width:100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    color: #B0B0B0;
+align-items: center;
+font-family: "Prompt", sans-serif;
+font-size: 1.11vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+}
+.noListeningSong>div:nth-child(1){
+    position: absolute;
+    width:37.6vw;
+    height:34.4vh;
+    left: 29.0vw;
+    top:15.4vh;
+    display: flex;
+    gap:4.8vh;
+    flex-direction: column;
+    
+}
+.noListeningSong>div:nth-child(1)>div:nth-child(1){
+    display: flex;
+flex-direction: column;
+align-items: center;
+gap: 2.8vh;
+}
+.noListeningSong>div:nth-child(1)>div:nth-child(1) img{
+    width: 56px;
+height: 96px;
+}
+.noListeningSong>div:nth-child(1)>div:nth-child(1)>div{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.9vh;
+color: #A2A2A2;
+
+font-family: "Prompt", sans-serif;
+font-size: 1.6vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+}
+.uploadText
+{
+    color: #A2A2A2;
+
+font-family: "Prompt", sans-serif;
+font-size: 1.11vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+}
+.noListeningSong>div:nth-child(1)>div:nth-child(2){
+    align-self:center;
+    display: flex;
+    width:12.6vw;
+padding: 16px 32px;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+background: var(--web-tertiary, #95D14A);
+color: #FFF;
+
+font-family: "Prompt", sans-serif;
+font-size: 1.4vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+input{
+    color: #FFF;
+
+font-family: "Prompt", sans-serif;
+font-size: 1.4vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+.upload2{
+    position: fixed;
+    left:31.5vw;
+    right:31.5vw;
+    top:25vh ;
+    bottom:25vh;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 55px;
+    align-items: center;
+    gap:7.7vh;
+    background-color: #363834;
+    border-radius: 24px;
+border: 1px solid #C7C7C7;
+
+color: #FFF;
+
+
+font-family: "Prompt", sans-serif;
+font-size: 1.7vw;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+}
+.upload2>div:nth-child(2){
+    display: flex;
+flex-direction: column;
+width: 100%;
+gap: 4.8vh;
+}
+.same{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 16px;
+color: #929292;
+
+font-family: "Prompt", sans-serif;
+font-size: 1.54vw;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+}
+.same>div:nth-child(2){
+    display: flex;
+width:100%;
+height:5vh;
+text-align: center;
+justify-content: center;
+align-items: center;
+gap: 8px;
+border-radius: 12px;
+background: #00A64C;
+color: #FFF;
+
+font-family:"Prompt", sans-serif;
+font-size: 1.22vw;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; 
+}
+.upload>img:nth-child(3){
+    position:absolute;
+    top:4vh;
+    right:6vh;
+    height:25px;
+    width:25px;
+}
+@media(max-width:800px){
+   .artistNavBar>div:nth-child(1),.artistNavBar>div:nth-child(1)> span{
+     font-size: 40px; 
+    }
+    .artistNavBar>div:nth-child(3){
+        width: 125px;
+        height: 48px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+    .inside{
+        gap: 33px;
+        padding: 0px;
+    }
+    .yourListening{
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    .listeningSongs{
+        background: #000;
+        border: 0px;
+        padding: 0 20px 0 20px;
+    }
+    
+    .noListeningSong>div:nth-child(1)>div:nth-child(1)>div{
+        font-size:1.5rem;
+        align-self: center;
+    }
+    .uploadText{
+        font-size: 1rem;
+        white-space: wrap;
+        text-align: center;
+    }
+    
+    .noListeningSong>div:nth-child(1)>div:nth-child(2){
+        display: flex;
+        
+        flex-direction: column;
+        width: 182px;
+        height: 52px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+    .upload{
+        height: 64vh;
+        width:93%;
+        left: 3.5%;
+        right:3.5%;
+        padding: 42px 15px 40px 15px;
+        
+    }
+    .uploadUpper{
+        justify-content: space-between;
+    }
+    .uploadUpper>div:nth-child(1){
+        font-size:1.3rem;
+        white-space: nowrap;
+    }
+    .uploadUpper>div:nth-child(2)>div:nth-child(1){
+        width:147px;
+        font-size: 1rem;
+    }
+    .uploadUpper>div:nth-child(2)>div:nth-child(2){
+        gap: 16px;
+        font-size: 14px;
+        white-space: nowrap;
+        line-height: 32px;
+    }
+    .uploadUpper>div:nth-child(2)>div:nth-child(2)>div:nth-child(1){
+        white-space: wrap;
+        line-height: normal;
+    }
+    .uploadLower{
+     gap: 12px;
+     justify-content: center;
+    }
+    .uploadLower div{
+        width: 48px;
+height: 16px;
+    }
+    .upload>img:nth-child(3){
+         right:6vw;
+         top: 3vh;
+    }
+    .upload1{
+        height: 64vh;
+        width:93%;
+        left: 3.5%;
+        right:3.5%;
+        padding: 42px 15px 40px 15px;
+text-align: center;
+        font-size: 1.5rem;
+        gap: 40px;
+    }
+    .upload1>div:nth-child(2) input{
+        font-size: 1rem;
+    }
+    .upload1>div:nth-child(2) div{
+        font-size: 1.2rem;
+    }
+    .upload2{
+        width:93%;
+        left: 3.5%;
+        right:3.5%;
+        height: 43.8vh;
+        top: 17vh;
+        padding: 40px 22px;
+        font-size: 25px;
+        white-space: wrap;
+        text-align: center;
+    }
+    .same,.same>div:nth-child(2){
+        font-size: 1rem;
+    }
+    .listeningSongsDetail>div:nth-child(1),  .listeningSongsDetail>div:nth-child(4), .listeningSongsDetail>div:nth-child(5){
+        display: none;
+    }
+    .listeningSongsDetail{
+        font-size: 1rem;
+    }
+    .listeningSongsDetail>div:nth-child(7){
+        font-size: 1rem;
+        width: 10vw;
+    }
+}

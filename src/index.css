@@ -1,0 +1,996 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Style+Script&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  height:100%;
+  width: 100vw;
+  background-color: #BFE68C;
+  overflow-x: hidden;
+  font-family: Abhaya Libre Extrabold;
+  
+}
+
+#root {
+
+  overflow-x: hidden;
+  width: 100vw;
+ 
+  
+  
+}
+
+.loginContainer {
+ 
+  background-image: url('./assets/newImg.svg');
+ width: 100vw;
+ height: 100vh;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position:  bottom left;
+
+}
+
+.tryi {
+ height: 100%;
+ 
+}
+
+.navBar {
+  display: flex;
+  justify-content:space-between;
+  /* gap: 80%; */
+  width: 77.78vw;
+  height: 4.8vh;
+  margin-top: 2.4vh;
+  margin-left: 11.11vw;
+}
+
+.logoHeading {
+
+  font-family: 'Style Script', cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  height: 40px;
+  width: 103px;
+}
+
+.logoHeadingEnd {
+  color: var(--web-tertiary, #5A911F);
+  font-family: 'Style Script', cursive;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  height: 40px;
+  width: 103px;
+}
+
+.referLogin {
+  color: var(--web-tertiary, #C76B98);
+  height: 2.9vh;
+  user-select: none;
+  font-family: 'Prompt', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.login {
+  color: var(--web-tertiary, #5A911F);
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.loginCard {
+  height: 54vh;
+  width: 30.46vw;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #656565;
+  background: #95D14A;
+  position: relative;
+  top: 14.11vh;
+  left: 60.11vw;
+  padding: 7vh 3.5vw 7vh 3.5vw;
+}
+
+.loginFrame {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  display: flex;
+  justify-content: start;
+ align-items: baseline;
+ 
+  width: 100%;
+  gap: 0.8vw;
+  white-space: nowrap;
+  padding-left:1vh;
+  padding-right: 1vh;
+  
+}
+
+.welcomeText {
+  
+  color: #FFF;
+  font-family: 'Prompt', sans-serif;
+  font-size: 2.2vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.loginText {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.38vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  height: 7.2vh;
+ 
+}
+
+.label {
+  height: 8.7vh;
+  width: 100%;
+  position: relative;
+  margin-top: 3.4vh;
+  width: 100%;
+  padding-top:1.9vh;
+}
+
+.loginField {
+  width: 100%;
+  height: 6.8vh;
+  border-radius: 1.67vw;
+  border: 1px solid #FFF;
+  background: none;
+  color: #656565;
+  padding-left: 6.87%;
+  font-size: 1rem;
+  color: #FFF;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.emailText {
+  position: absolute;
+  color: #FFF;
+  left: 1.8vw;
+  bottom: 68%;
+  background-color: #95D14A;
+  height: 1.94vh;
+  white-space: nowrap;
+  display: inline-flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.04vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+#login .emailText {
+  position: absolute;
+  color: #FFF;
+  left: 1.8vw;
+  bottom: 74%;
+  background-color: none;
+  height: 1.94vh;
+  white-space: nowrap;
+  display: inline-flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.04vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+
+.label p {
+  color: #FF7579;
+  width: 100%;
+  height: 1.94vh;
+  margin-top: 1vh;
+  padding-left: 10px;
+}
+
+.errorMsg {
+  color: #FF7579;
+  width: 100%;
+  text-align: start;
+  height: 1.94vh;
+  margin-top: 0.8vh;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.rememberMe {
+  height: 5.8vh;
+  width: 100%;
+  display: flex;
+  align-items:center;
+  text-align: center;
+  
+}
+
+.checkBox {
+  height: 22px;
+  width: 22px;
+
+  background-color: white;
+}
+
+.rememberText {
+  height:100%;
+  
+  color: #FFF;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.11vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.submitLogin {
+  height: 5.6vh;
+  align-self: center;
+  display: flex;
+  border-radius: 11vw;
+  background: var(--web-tertiary, #5A911F);
+  margin-top: 4.5vh;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submitLogin,
+.continueButton,
+.checkBox,
+.referLogin:hover {
+  cursor: pointer;
+}
+
+.continueButton {
+  height: 6.3vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45.5%;
+  color: #FFF;
+  align-self: center;
+  text-align: center;
+  border: none;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  background: none;
+}
+
+.signUpCard {
+  width: 30.46vw;
+  height: 78.68vh;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #656565;
+  background: #95D14A;
+  padding: 7vh 1.9vw 7vh 1.9vw;
+  position: relative;
+  top: 4.81vh;
+  left: 59.88vw
+}
+
+.signUpFrame {
+  width: 100%;
+  height:64.7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loader {
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #95D14A ;
+  border-top: 5px solid #f0f0f0;
+  border-radius: 50%;
+  width: 4.8vh;
+  height: 4.8vh;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.verifyEmail {
+  width: 100%;
+  height: 2.43vh;
+  color: #FFF;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.otp-input {
+  width:255px;
+  height:76;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  gap: 1.6vh;
+}
+
+.otpSet {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background: none;
+  gap:1.215vw;
+  justify-content: space-between;
+}
+
+.otpSet input {
+  height:50px;
+  width:50px;
+  background: none;
+  border-radius: 15px;
+  border: 1px solid #FFF;
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+}
+
+.resendOtp {
+  display: flex;
+  width: 100%;
+  height: 1.6vh;
+  color: #FFF;
+  text-align:center;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0.64px;
+  box-shadow: none;
+}
+
+.resendOtp button {
+  background: transparent;
+  color: #FFF;
+  
+  align-self: flex-start;
+  
+  color: #5A911F;
+text-align: center;
+font-family: 'Prompt', sans-serif;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 16px */
+letter-spacing: 0.64px;
+}
+.resendOtp button:hover{
+  cursor: pointer;
+}
+
+.phoneLogin {
+  width: 71%;
+  height: 1.945vh;
+  color: var(--web-tertiary, #C76B98);
+  margin-top: 3.4vh;
+  text-align: center;
+  user-select: none;
+  font-family: 'Prompt', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.phoneLogin, .forgetText:hover {
+  cursor: pointer;
+}
+input:focus{
+  border: none;
+}
+
+.forgetText {
+  width: 100%;
+  height: 1.7vh;
+  color: #5A911F;
+  text-align: end;
+  margin-top: 0.8vh;
+  font-family: 'Prompt', sans-serif;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+#signUp,#login,#forget{
+  gap: 3.4vh;
+  justify-content: space-between;
+ }
+ #signUp,#login,#forget .favText,.loginText,.label,.rememberMe,.phoneLogin,.submitLogin,.errorMsg{
+  margin:0;
+   }
+  
+   #login .label{
+    height: 11.9vh;
+   }
+   #login{
+    height: 40vh;
+   }
+   .submitLogin{
+    width: 100%;
+   
+   }
+   #forgetCard{
+    height:64vh ;
+    width: 30.278vw;
+   }
+   #forget .loginText{
+    width: 18vw;
+    font-size: 1.5rem;
+   }
+   #forget .welcomeText {
+    font-size: 2rem;
+  }
+  #forget .logoHeading {
+    font-size: 2.7rem;
+  }
+   #otpCard{
+    height:64vh;
+    width:30vw ;
+   }
+   #otp{
+    height:49vh ;
+    gap: 3vh;
+  
+    
+   }
+   #otp .welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    /* padding: 0; */
+    
+   }
+
+@media (max-width: 1300px) {
+  .loginCard,#forgetCard,#otpCard {
+    width: 35.46vw;
+    gap: 1.4vh;
+  }
+  .loginText {
+    font-size: 1.2rem;
+  }
+  .emailText {
+    font-size: 1.2rem;
+  }
+  #login .emailText {
+    font-size: 1.2rem;
+  }
+  .rememberText {
+    font-size: 1rem;
+  }
+  .forgetText {
+    font-size: 1rem;
+  }
+  .errorMsg {
+    font-size: 1rem;
+  }
+  .favText {
+    font-size: 1.3rem;
+  }
+  #forget .favText{
+    font-size:2vw;
+      }
+      #otp .welcomeText {
+        font-size: 2rem;
+      }
+}
+
+@media (max-width: 1211px) {
+  .signUpCard {
+    width: 35.46vw;
+  }
+  .signUpFrame {
+    gap: 1.4vh;
+  }
+  #forget .loginText{
+  font-size:1.5rem;
+  }
+  
+  #forget .welcomeText {
+    font-size: 2rem;
+  }
+  #forget .logoHeading {
+    font-size: 2.7rem;
+  }
+  #forget .loginText{
+    width:80%;
+
+  }
+
+}
+
+@media (max-width: 1050px) {
+  .signUpCard {
+    width: 40.46vw;
+  }
+  .loginCard,#forgetCard,#otpCard {
+    width: 40.46vw;
+  }
+  .welcomeText {
+    font-size: 2rem;
+  }
+  .logoHeading {
+    font-size: 2.7rem;
+  }
+  .loginText {
+    font-size: 1.2rem;
+  }
+  .emailText {
+    font-size: 0.9rem;
+  }
+  #login .emailText {
+    font-size: 0.9rem;
+  }
+  .rememberText {
+    font-size: 1rem;
+  }
+  .phoneLogin {
+    font-size: 1rem;
+  }
+  .continueButton {
+    font-size: 1rem;
+  }
+  #forget .favText{
+    font-size:1.5rem;
+      }
+     #forgetCard {
+        width: 45.46vw;
+        left: 8vw;
+        right: 8vw;
+      }
+}
+
+@media (max-width: 900px) {
+  .signUpCard {
+    width: 45.46vw;
+    left: 8vw;
+    right: 8vw;
+  }
+  .signUpFrame {
+    gap: 1.4vh;
+  }
+  .loginCard,#otpCard {
+    width: 45.46vw;
+    left: 8vw;
+    right: 8vw;
+  }
+  .loginFrame {
+    gap: 1.4vh;
+  }
+}
+@media (max-width:845px){
+  
+  #forget .phoneLogin{
+    width: 22vw;
+
+  }
+  #forgetCard {
+    width: 60.46vw;
+    left: 20vw;
+    right: 20vw;
+  }
+  #forget .loginText{
+    font-size:1.7rem;
+
+  }
+  #forget .favText{
+    font-size:3.5vw;
+
+  }
+  #forget .phoneLogin{
+    width: 100%;
+    text-align: center;
+
+  }
+ 
+}
+
+@media (max-width: 800px) {
+  .signUpCard {
+    width: 60.46vw;
+    left: 20vw;
+    right: 20vw;
+  }
+  .signUpFrame {
+    gap: 1.4vh;
+  }
+  .loginCard,#otpCard {
+    width: 60.46vw;
+    left: 20vw;
+    right: 20vw;
+  }
+  
+  #otp .loginText{
+  font-size: 1.5rem;
+  }
+  #otp .verifyEmail{
+    font-size: 1.8rem;
+  }
+  #otp .rememberText{
+    font-size: 1.1rem;
+  }
+  .loginFrame {
+    gap: 0.4vh;
+  }
+  .loginContainer {
+    background-image: url();
+  }
+  #login .submitLogin {
+    margin-top: 1.5vh;
+  }
+  #signUp .submitLogin{
+    margin-top: 3vh;
+  }
+}
+@media (max-width: 680px) {
+  
+  #forgetCard {
+    width: 380px;
+    left: 15vw;
+  }
+  #forget .favText{
+    font-size:1.5rem;
+
+  }
+
+  
+}
+
+@media (max-width: 640px) {
+  .signUpCard {
+    width: 380px;
+    left: 15vw;
+  }
+  .loginCard,#forgetCard{
+    width: 380px;
+    left: 15vw;
+  }
+  #otpCard {
+    width: 430px;
+    left: 15vw;
+   
+  
+  
+    
+  }
+  .navBar {
+    margin-left: 4.3vw;
+  }
+}
+
+@media (max-width: 521px){
+
+  .signUpCard{
+    width:380px;
+    left: 10vw;
+    
+  }
+  .loginCard{
+    width:380px;
+    left: 10vw;
+    
+  }
+  #otpCard{
+   
+    left: 6vw;
+    
+  }
+   .navBar{
+   /* gap:50vw; */
+   } 
+}
+@media (max-Width:475px){
+  .signUpCard{
+    width:100vw;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    top: 8vh;
+    padding: 5.55vw;
+    border: 0px;
+    
+  }
+  
+  .loginCard{
+    width:100vw;
+    height: 50vh;
+    background-color: transparent;
+    left: 0;
+    right: 0;
+    top: 17vh;
+    padding:0px 6.55vw 0 0;
+    border: 0px;
+    
+  }
+  .mainContent{
+   padding:14px;
+  }
+  #login{
+    width:100%;
+    height:50vh;
+    gap:2vh;
+  }
+  
+  #login .label{
+    margin-top: 2vh;
+  }
+  #login .submitLogin{
+    margin-top: 2vh;
+    height: 6.5vh;
+  }
+  #login .loginField{
+    border-radius: 6.67vw;
+  }
+
+  .welcome
+  {
+
+    height:11vh;
+    gap:2vw;
+     flex-direction: column;
+     align-items: center;
+    /* margin-left:10vw; */
+    text-align: center;
+    
+  }
+  .welcomeText{
+    font-size: 2rem;
+  }
+  
+  .logoHeading,.logoHeadingEnd{
+    font-size: 2.9rem;
+  }
+   .navBar{
+    
+   margin-top: 5.7vh;
+    
+      width: 90vw;
+      
+   /* gap:50vw; */
+   
+   } 
+   .loginField{
+    border-radius: 8vw;
+    font-size: 1.3rem;
+   }
+   .emailText{
+    left: 4vh;
+    background-color: transparent;
+   }
+   #login .emailText{
+    left: 4vh;
+    background-color: transparent;
+}
+   
+   html{
+    font-size: 17px;
+   }
+   #forgetCard{
+    width:100vw;
+    height:60vh;
+    left: 0;
+    right: 0;
+    gap:2vh;
+    top: 12vh;
+  }
+  #forget .loginText{
+    font-size: 1.4rem;
+    padding-top: 6px;
+  }
+  #forget .submitLogin{
+    margin-top: 2vh;
+    height: 6.5vh;
+  
+  }
+  #otp .submitLogin{
+    margin-top: 2vh;
+    height: 6.5vh;
+  
+  }
+  #otpCard{
+width: 100vw;
+left: 0;
+right: 0;
+top:15vh;
+  }
+  #otp{
+    height:52vh;
+  }
+  #otp .loginText{
+    font-size:1.2rem;
+    }
+    #otp .verifyEmail{
+      font-size: 1.3rem;
+    }
+    #otp .rememberText{
+      font-size: 1rem;
+    }
+    
+
+#otpCard {
+    padding: 0px 4vw;
+}
+}
+@media (max-Width:400px)
+  {
+    #forget .loginText{
+      font-size: 1.2rem;
+      padding-top: 6px;
+    }
+    #forget .favText{
+      font-size:1.3rem;
+  
+    }
+
+   
+ 
+  }
+  
+
+
+
+ 
+  
+  a {
+    color: #aaa;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  nav {
+    background: #daf3b2;
+    position: relative;
+  }
+  nav:after {
+    content: "";
+    display: block;
+    background: #444;
+    position: absolute;
+    left: 16px;
+    top: 24px;
+    width: 88px;
+    height: calc(100% - 48px);
+    border-radius: 8px;
+    transition: left 0.37s cubic-bezier(0.47, 1.64, 0.41, 0.8);
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 1;
+  }
+  nav ul li a {
+    width: 120px;
+    box-sizing: border-box;
+    padding: 24px 0;
+    text-align: center;
+    position: relative;
+  }
+  nav ul li a.active {
+    color: #000;
+  }
+  nav ul li a.active:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #fff;
+  }
+  nav ul li a:hover, nav ul li a:focus {
+    color: #fff;
+  }
+  nav:has(li:nth-child(1) a.active):after {
+    left: 16px;
+  }
+  nav:has(li:nth-child(1) a:hover,
+  li:nth-child(1) a:focus):after {
+    left: 16px !important;
+  }
+  nav:has(li:nth-child(2) a.active):after {
+    left: 136px;
+  }
+  nav:has(li:nth-child(2) a:hover,
+  li:nth-child(2) a:focus):after {
+    left: 136px !important;
+  }
+  nav:has(li:nth-child(3) a.active):after {
+    left: 256px;
+  }
+  nav:has(li:nth-child(3) a:hover,
+  li:nth-child(3) a:focus):after {
+    left: 256px !important;
+  }
+  nav:has(li:nth-child(4) a.active):after {
+    left: 356px;
+  }
+  nav:has(li:nth-child(4) a:hover,
+  li:nth-child(4) a:focus):after {
+    left: 376px !important;
+  }
+
+  body {
+    @apply leading-[normal] m-0;
+  }
+  *,
+  ::before,
+  ::after {
+    border-width: 0;
+  }
+  
+
+ 
+    .to{
+      background: rgba(191, 230, 140, 0.60);
+    }
